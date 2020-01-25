@@ -1,19 +1,20 @@
 // BUSINESS LOGIC 
 // var number 
-var newArray = []
+
 var beepBoop = function(number){
+  var newArray = []
   var total = 0;
   for( var currentNumber = 0; currentNumber <= number; currentNumber ++){
     
-    {currentNumber+1;}
+    // {currentNumber+1;}
     console.log(currentNumber)
     newArray.push(currentNumber + "<br>")
     var output = currentNumber.toString();
     if (output.includes ("3")){
-      newArray.splice(currentNumber, 1, "'I'm sorry, Dave. I'm afraid I can't do that.'<br>")
+      newArray.splice(currentNumber, 1, "I'm sorry, Dave. I'm afraid I can't do that.'<br>")
     }
     else if (output.includes("2")){
-      newArray.splice(currentNumber, 1, "'Boop!'<br>")
+      newArray.splice(currentNumber, 1, "Boop!<br>")
     }
     else if (output.includes("1")){
       newArray.splice(currentNumber, 1, "'Beep!'<br>")
@@ -22,7 +23,7 @@ var beepBoop = function(number){
   console.log(newArray);
   
   
- return (newArray.join(' '));
+  return (newArray.join(' '));
 }
 
 
@@ -40,6 +41,7 @@ $(document).ready(function(){
     var result = beepBoop(number);
     console.log(result)
     $("#result").append(result);
+    // $("#result").toggle();
     event.preventDefault();
   });
 });
