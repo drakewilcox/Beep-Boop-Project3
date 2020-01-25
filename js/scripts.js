@@ -6,8 +6,8 @@ var beepBoop = function(number){
   var total = 0;
   for( var currentNumber = 0; currentNumber <= number; currentNumber ++){
     
-    // {currentNumber+1;}
-    console.log(currentNumber)
+  
+    // console.log(currentNumber)
     newArray.push(currentNumber + "<br>")
     var output = currentNumber.toString();
     if (output.includes ("3")){
@@ -20,28 +20,18 @@ var beepBoop = function(number){
       newArray.splice(currentNumber, 1, "'Beep!'<br>")
     }
   }
-  console.log(newArray);
+  // console.log(newArray);
   
   
-  return (newArray.join(' '));
+  return (newArray).join("");
 }
-
-
-
-
-
-
 
 // USER LOGIC
 $(document).ready(function(){
   $("#formOne").submit(function(event){
-    
+     event.preventDefault();
     var number = parseInt($("input#numberInput").val());
-   
     var result = beepBoop(number);
-    console.log(result)
-    $("#result").append(result);
-    // $("#result").toggle();
-    event.preventDefault();
+    $("#result").html(result);
   });
 });
