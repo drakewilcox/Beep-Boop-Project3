@@ -1,4 +1,22 @@
-/* p {
-  display: none;
-} */
 
+.header {
+  /* padding: 60px; */
+  display: flex;
+  
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: rgb(68, 68, 67);
+  color: white;
+
+}
+.container {
+  
+  /* margin-top: 20px; */
+  text-align: center;
+  background-color: rgb(203, 204, 202);
+}
+.btn {
+  background-color: gold;
+  
+}
