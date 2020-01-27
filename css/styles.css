@@ -2,27 +2,20 @@ html,body {
   height: 100%;
   background-color:  rgb(204, 221, 186);;
 }
-
 .header {
   display: flex;
-  
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
   background-color: rgb(39, 39, 38);
   color: white;
-
 }
 .container {
-  
-  /* margin-top: 20px; */
-  /* height: 100%; */
   text-align: center;
   background-color: rgb(204, 221, 186);
 }
 .btn {
   background-color: gold;
-  
 }
 #show {
   height: auto;
