@@ -1,6 +1,6 @@
 html,body {
   height: 100%;
-  background-color:  rgb(204, 221, 186);;
+  background-color:  rgb(211, 212, 209);
 }
 .header {
   display: flex;
@@ -12,7 +12,7 @@ html,body {
 }
 .container {
   text-align: center;
-  background-color: rgb(204, 221, 186);
+  background-color:rgb(211, 212, 209);
 }
 .btn {
   background-color: gold;

@@ -6,13 +6,13 @@ var beepBoop = function(number){
     newArray.push(currentNumber + "<br>")
     var output = currentNumber.toString();
     if (output.includes ("3")){
-      newArray.splice(currentNumber, 1, "<strong>'I'm sorry, Dave. I'm afraid I can't do that.'<br></strong>")
+      newArray.splice(currentNumber, 1, "<em>'I'm sorry, Dave. I'm afraid I can't do that.'<br></em>")
     }
     else if (output.includes("2")){
-      newArray.splice(currentNumber, 1, "<strong>'Boop!'<br></strong>")
+      newArray.splice(currentNumber, 1, "<em>'Boop!'<br></em>")
     }
     else if (output.includes("1")){
-      newArray.splice(currentNumber, 1, "<strong>'Beep!'<br></strong>")
+      newArray.splice(currentNumber, 1, "<em>'Beep!'<br></em>")
     }
   }
   return (newArray).join("");
